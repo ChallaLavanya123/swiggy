@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: rgb(245, 243, 239);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  margin: 0;
+  color:black;
+}
+
+.header nav a {
+  margin-left: 15px;
+  color: rgb(22, 20, 20);
+  text-decoration: none;
+}
+
+.search-bar {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #f7f3f6;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.image-sizes{
+  width:100%;
+  height:30%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari */
+}
+
+.card {
+  min-width: 200px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.image-sizes {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-list-image {
+  width: 100%;
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+}
+
+.food-list-image:hover {
+  transform: scale(1.1);
+}
+
